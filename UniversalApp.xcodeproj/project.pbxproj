@@ -28,14 +28,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13ECBBB82308005C002C2885 /* Universal App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Universal App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13ECBBB82308005C002C2885 /* UniversalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13ECBBBB2308005C002C2885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13ECBBBD2308005C002C2885 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13ECBBC02308005C002C2885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13ECBBC22308005F002C2885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13ECBBC52308005F002C2885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13ECBBC72308005F002C2885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		13ECBBCC2308005F002C2885 /* Universal AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Universal AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13ECBBCC2308005F002C2885 /* UniversalAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversalAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13ECBBD02308005F002C2885 /* Universal_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universal_AppTests.swift; sourceTree = "<group>"; };
 		13ECBBD22308005F002C2885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13ECBBDF23080A68002C2885 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -72,8 +72,8 @@
 		13ECBBB92308005C002C2885 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13ECBBB82308005C002C2885 /* Universal App.app */,
-				13ECBBCC2308005F002C2885 /* Universal AppTests.xctest */,
+				13ECBBB82308005C002C2885 /* UniversalApp.app */,
+				13ECBBCC2308005F002C2885 /* UniversalAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,9 +137,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13ECBBB72308005C002C2885 /* Universal App */ = {
+		13ECBBB72308005C002C2885 /* UniversalApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13ECBBD52308005F002C2885 /* Build configuration list for PBXNativeTarget "Universal App" */;
+			buildConfigurationList = 13ECBBD52308005F002C2885 /* Build configuration list for PBXNativeTarget "UniversalApp" */;
 			buildPhases = (
 				13ECBBB42308005C002C2885 /* Sources */,
 				13ECBBB52308005C002C2885 /* Frameworks */,
@@ -149,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = "Universal App";
+			name = UniversalApp;
 			productName = "Universal App";
-			productReference = 13ECBBB82308005C002C2885 /* Universal App.app */;
+			productReference = 13ECBBB82308005C002C2885 /* UniversalApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		13ECBBCB2308005F002C2885 /* Universal AppTests */ = {
+		13ECBBCB2308005F002C2885 /* UniversalAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13ECBBD82308005F002C2885 /* Build configuration list for PBXNativeTarget "Universal AppTests" */;
+			buildConfigurationList = 13ECBBD82308005F002C2885 /* Build configuration list for PBXNativeTarget "UniversalAppTests" */;
 			buildPhases = (
 				13ECBBC82308005F002C2885 /* Sources */,
 				13ECBBC92308005F002C2885 /* Frameworks */,
@@ -167,9 +167,9 @@
 			dependencies = (
 				13ECBBCE2308005F002C2885 /* PBXTargetDependency */,
 			);
-			name = "Universal AppTests";
+			name = UniversalAppTests;
 			productName = "Universal AppTests";
-			productReference = 13ECBBCC2308005F002C2885 /* Universal AppTests.xctest */;
+			productReference = 13ECBBCC2308005F002C2885 /* UniversalAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -191,7 +191,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 13ECBBB32308005C002C2885 /* Build configuration list for PBXProject "Universal App" */;
+			buildConfigurationList = 13ECBBB32308005C002C2885 /* Build configuration list for PBXProject "UniversalApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -204,8 +204,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13ECBBB72308005C002C2885 /* Universal App */,
-				13ECBBCB2308005F002C2885 /* Universal AppTests */,
+				13ECBBB72308005C002C2885 /* UniversalApp */,
+				13ECBBCB2308005F002C2885 /* UniversalAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,7 +255,7 @@
 /* Begin PBXTargetDependency section */
 		13ECBBCE2308005F002C2885 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13ECBBB72308005C002C2885 /* Universal App */;
+			target = 13ECBBB72308005C002C2885 /* UniversalApp */;
 			targetProxy = 13ECBBCD2308005F002C2885 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -449,7 +449,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Universal App.app/Universal App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UniversalApp.app/UniversalApp";
 			};
 			name = Debug;
 		};
@@ -470,14 +470,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Universal App.app/Universal App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UniversalApp.app/UniversalApp";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13ECBBB32308005C002C2885 /* Build configuration list for PBXProject "Universal App" */ = {
+		13ECBBB32308005C002C2885 /* Build configuration list for PBXProject "UniversalApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13ECBBD32308005F002C2885 /* Debug */,
@@ -486,7 +486,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13ECBBD52308005F002C2885 /* Build configuration list for PBXNativeTarget "Universal App" */ = {
+		13ECBBD52308005F002C2885 /* Build configuration list for PBXNativeTarget "UniversalApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13ECBBD62308005F002C2885 /* Debug */,
@@ -495,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13ECBBD82308005F002C2885 /* Build configuration list for PBXNativeTarget "Universal AppTests" */ = {
+		13ECBBD82308005F002C2885 /* Build configuration list for PBXNativeTarget "UniversalAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13ECBBD92308005F002C2885 /* Debug */,

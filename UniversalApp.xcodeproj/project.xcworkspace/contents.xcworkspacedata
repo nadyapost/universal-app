@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Universal App.xcodeproj">
+      location = "self:/Users/nadyapost/Desktop/iOS Projecs/Universal App/UniversalApp.xcodeproj">
    </FileRef>
 </Workspace>
