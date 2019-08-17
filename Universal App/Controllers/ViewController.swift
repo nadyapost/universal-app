@@ -17,7 +17,17 @@ class TableViewController: UITableViewController {
   }
   
   func fetchData() {
-    movies = [MovieViewModel(movie: Movie(title: "Some title", imageHref: "", rating: 1.1, releaseDate: ""))]
+    let moviesUrl = "https://www.dropbox.com/s/q1ins5dsldsojzt/movies.json?dl=1"
+    guard let url = URL(string: moviesUrl) else { return }
+    URLSession.shared.dataTask(with: url) { (data, response, err) in
+      guard let data = data else { return }
+      do {
+        let moviesSt = try JSONDecoder().decode(MoviesResponse.self, from: data)
+        print(moviesSt)
+      } catch let parsingError {
+        print(parsingError)
+      }
+    }.resume()
     
   }
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
