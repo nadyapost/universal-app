@@ -15,4 +15,5 @@ class MovieViewModel {
   init(movie: Movie) {
     self.movieTitle = movie.title
   }
+  
 }

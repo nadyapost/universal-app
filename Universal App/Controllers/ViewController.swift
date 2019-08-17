@@ -22,8 +22,9 @@ class TableViewController: UITableViewController {
     URLSession.shared.dataTask(with: url) { (data, response, err) in
       guard let data = data else { return }
       do {
-        let moviesSt = try JSONDecoder().decode(MoviesResponse.self, from: data)
-        print(moviesSt)
+        let moviesResponse = try JSONDecoder().decode(MoviesResponse.self, from: data)
+        self.movies = moviesResponse.movies.map {(movie) in MovieViewModel(movie: movie)}
+        self.tableView.reloadData()
       } catch let parsingError {
         print(parsingError)
       }
