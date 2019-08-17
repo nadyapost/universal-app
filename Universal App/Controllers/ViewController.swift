@@ -9,17 +9,25 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+  var movies: [MovieViewModel] = []
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    fetchData()
+  }
+  
+  func fetchData() {
+    movies = [MovieViewModel(movie: Movie(title: "Some title", imageHref: "", rating: 1.1, releaseDate: ""))]
+    
   }
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    <#code#>
+    let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomCell
+    cell.movie = movies[indexPath.row]
+    return cell
   }
 
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    <#code#>
+    return movies.count
   }
 }
 

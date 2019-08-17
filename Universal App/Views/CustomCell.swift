@@ -9,6 +9,12 @@
 import UIKit
 
 class CustomCell: UITableViewCell {
+  
+  var movie: MovieViewModel! {
+    didSet {
+      label.text = movie.movieTitle
+    }
+  }
 
   @IBOutlet var movieImage: UIImageView!
   @IBOutlet var label: UILabel!

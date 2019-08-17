@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		134ACBFE23080F0B009EFD4C /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134ACBFD23080F0B009EFD4C /* MovieViewModel.swift */; };
 		13ECBBBC2308005C002C2885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ECBBBB2308005C002C2885 /* AppDelegate.swift */; };
 		13ECBBBE2308005C002C2885 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ECBBBD2308005C002C2885 /* ViewController.swift */; };
 		13ECBBC12308005C002C2885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13ECBBBF2308005C002C2885 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		134ACBFD23080F0B009EFD4C /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		13ECBBB82308005C002C2885 /* UniversalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13ECBBBB2308005C002C2885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13ECBBBD2308005C002C2885 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		13ECBBDB230800F5002C2885 /* ModelViews */ = {
 			isa = PBXGroup;
 			children = (
+				134ACBFD23080F0B009EFD4C /* MovieViewModel.swift */,
 			);
 			path = ModelViews;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13ECBBBE2308005C002C2885 /* ViewController.swift in Sources */,
+				134ACBFE23080F0B009EFD4C /* MovieViewModel.swift in Sources */,
 				13ECBBE023080A68002C2885 /* CustomCell.swift in Sources */,
 				13ECBBE223080BA7002C2885 /* Movie.swift in Sources */,
 				13ECBBBC2308005C002C2885 /* AppDelegate.swift in Sources */,
