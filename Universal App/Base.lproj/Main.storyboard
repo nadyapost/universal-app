@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="9PG-Ml-rOp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="9PG-Ml-rOp" customClass="CustomCell" customModule="Universal_App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9PG-Ml-rOp" id="iB7-ht-KwW">
@@ -47,6 +47,10 @@
                                         <constraint firstItem="cZk-yK-PVJ" firstAttribute="top" secondItem="iB7-ht-KwW" secondAttribute="top" constant="8" id="xUl-JM-2Dj"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="image" destination="cZk-yK-PVJ" id="y2o-HO-CeF"/>
+                                    <outlet property="label" destination="1xe-u0-7Jq" id="wlK-hR-zaf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
