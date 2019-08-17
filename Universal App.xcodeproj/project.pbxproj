@@ -77,8 +77,11 @@
 		13ECBBBA2308005C002C2885 /* Universal App */ = {
 			isa = PBXGroup;
 			children = (
+				13ECBBDB230800F5002C2885 /* ModelViews */,
+				13ECBBDD2308012A002C2885 /* Views */,
+				13ECBBDC2308011C002C2885 /* Models */,
+				13ECBBDE23080193002C2885 /* Controllers */,
 				13ECBBBB2308005C002C2885 /* AppDelegate.swift */,
-				13ECBBBD2308005C002C2885 /* ViewController.swift */,
 				13ECBBBF2308005C002C2885 /* Main.storyboard */,
 				13ECBBC22308005F002C2885 /* Assets.xcassets */,
 				13ECBBC42308005F002C2885 /* LaunchScreen.storyboard */,
@@ -94,6 +97,35 @@
 				13ECBBD22308005F002C2885 /* Info.plist */,
 			);
 			path = "Universal AppTests";
+			sourceTree = "<group>";
+		};
+		13ECBBDB230800F5002C2885 /* ModelViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelViews;
+			sourceTree = "<group>";
+		};
+		13ECBBDC2308011C002C2885 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		13ECBBDD2308012A002C2885 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		13ECBBDE23080193002C2885 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				13ECBBBD2308005C002C2885 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
