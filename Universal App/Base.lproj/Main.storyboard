@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Movies list-->
         <scene sceneID="bNr-aK-mlN">
             <objects>
                 <tableViewController id="mob-gP-4tB" customClass="TableViewController" customModule="UniversalApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,21 +18,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="65" id="9PG-Ml-rOp" customClass="CustomCell" customModule="UniversalApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="65"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="90" id="9PG-Ml-rOp" customClass="CustomCell" customModule="UniversalApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9PG-Ml-rOp" id="iB7-ht-KwW">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="64.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cZk-yK-PVJ">
-                                            <rect key="frame" x="8" y="8" width="60" height="48.5"/>
+                                            <rect key="frame" x="8" y="8.5" width="90" height="90"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="60" id="O9G-n2-0Y2"/>
+                                                <constraint firstAttribute="width" constant="90" id="DWX-Zi-pSI"/>
+                                                <constraint firstAttribute="height" constant="90" id="Xyb-Mz-Owd"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xe-u0-7Jq">
-                                            <rect key="frame" x="80" y="22" width="322" height="21"/>
+                                            <rect key="frame" x="106" y="35.5" width="224" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -40,10 +41,11 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="1xe-u0-7Jq" firstAttribute="centerY" secondItem="iB7-ht-KwW" secondAttribute="centerY" id="3qK-pt-cOm"/>
+                                        <constraint firstItem="1xe-u0-7Jq" firstAttribute="top" secondItem="iB7-ht-KwW" secondAttribute="topMargin" constant="24" id="6UA-2b-VOn"/>
                                         <constraint firstAttribute="trailing" secondItem="1xe-u0-7Jq" secondAttribute="trailing" constant="12" id="N0i-Cv-f0Y"/>
-                                        <constraint firstItem="1xe-u0-7Jq" firstAttribute="leading" secondItem="cZk-yK-PVJ" secondAttribute="trailing" constant="12" id="Qtx-fL-8ZY"/>
+                                        <constraint firstItem="1xe-u0-7Jq" firstAttribute="leading" secondItem="cZk-yK-PVJ" secondAttribute="trailing" constant="8" id="Qtx-fL-8ZY"/>
                                         <constraint firstItem="cZk-yK-PVJ" firstAttribute="leading" secondItem="iB7-ht-KwW" secondAttribute="leading" constant="8" id="ftL-cF-Lid"/>
-                                        <constraint firstAttribute="bottom" secondItem="cZk-yK-PVJ" secondAttribute="bottom" constant="8" id="qKJ-rT-Pm8"/>
+                                        <constraint firstAttribute="bottom" secondItem="cZk-yK-PVJ" secondAttribute="bottom" constant="17.5" id="qKJ-rT-Pm8"/>
                                         <constraint firstItem="cZk-yK-PVJ" firstAttribute="top" secondItem="iB7-ht-KwW" secondAttribute="top" constant="8" id="xUl-JM-2Dj"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -58,7 +60,7 @@
                             <outlet property="delegate" destination="mob-gP-4tB" id="Sdh-5g-5TQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="qiF-iA-WLB"/>
+                    <navigationItem key="navigationItem" title="Movies list" id="qiF-iA-WLB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWf-Ks-pEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
