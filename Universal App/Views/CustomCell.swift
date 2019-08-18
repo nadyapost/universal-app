@@ -13,6 +13,7 @@ class CustomCell: UITableViewCell {
   var movie: MovieViewModel! {
     didSet {
       label.text = movie.movieTitle
+      movieImage.image = movie.image
     }
   }
 

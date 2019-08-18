@@ -7,13 +7,17 @@
 //
 
 import Foundation
+import UIKit
 
 class MovieViewModel {
   
   var movieTitle: String
+  var image = UIImage(named: "LoadingImg")
+  
   
   init(movie: Movie) {
     self.movieTitle = movie.title
+   
   }
   
 }

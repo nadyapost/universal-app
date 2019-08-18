@@ -24,7 +24,10 @@ class TableViewController: UITableViewController {
       do {
         let moviesResponse = try JSONDecoder().decode(MoviesResponse.self, from: data)
         self.movies = moviesResponse.movies.map {(movie) in MovieViewModel(movie: movie)}
-        self.tableView.reloadData()
+        DispatchQueue.main.async {
+          self.tableView.reloadData()
+        }
+       
       } catch let parsingError {
         print(parsingError)
       }

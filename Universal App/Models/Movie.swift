@@ -10,7 +10,7 @@ import Foundation
 
 struct Movie: Decodable {
   let title: String
-  let imageHref: String?
+  let imageHref: URL?
   let rating: Double?
   let releaseDate: String
 }
