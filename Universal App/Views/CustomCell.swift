@@ -14,6 +14,7 @@ class CustomCell: UITableViewCell {
     didSet {
       label.text = movie.movieTitle
       movieImage.image = movie.image
+      movie.loadImage()
     }
   }
 

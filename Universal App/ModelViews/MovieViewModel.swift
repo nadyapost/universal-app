@@ -13,11 +13,37 @@ class MovieViewModel {
   
   var movieTitle: String
   var image = UIImage(named: "LoadingImg")
-  
+  var url: URL?
+  enum ImageLoadState {
+    case loading
+    case loaded
+  }
+  var imageState: ImageLoadState?
   
   init(movie: Movie) {
     self.movieTitle = movie.title
-   
+    self.url = movie.imageHref
+    
   }
   
+  func loadImage() {
+    if imageState != nil { return }
+    print("Loading", movieTitle)
+    guard let url = url else {
+      imageState = .loaded
+      image = nil
+      return
+    }
+    DispatchQueue.global().async {
+      if let data = try? Data(contentsOf: url) {
+        self.imageState = .loading
+        if let image = UIImage(data: data) {
+          DispatchQueue.main.async {
+            self.imageState = .loaded
+            self.image = image
+          }
+        }
+      }
+    }
+  }
 }
