@@ -9,20 +9,17 @@
 import UIKit
 
 class CustomCell: UITableViewCell {
-  
+  @IBOutlet var movieImage: UIImageView!
+  @IBOutlet var label: UILabel!
+
   var movie: MovieViewModel! {
     didSet {
       label.text = movie.movieTitle
       movieImage.image = movie.image
+      // load image and reload imageView when ready
       movie.loadImage() { (image) in
         self.movieImage.image = image
       }
     }
   }
-
-  @IBOutlet var movieImage: UIImageView!
-  @IBOutlet var label: UILabel!
-  
-
-  
 }

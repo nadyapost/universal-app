@@ -47,6 +47,7 @@ class TableViewController: UITableViewController {
     
     performSegue(withIdentifier: "mainToDetail", sender: self)
   }
+  
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     let vc = segue.destination as! DetailViewController
     let indexPath = tableView.indexPathForSelectedRow

@@ -17,7 +17,7 @@ class DetailViewController: UIViewController {
   @IBOutlet var raiting: UILabel!
   
   override func viewDidLoad() {
-        super.viewDidLoad()
+      super.viewDidLoad()
  
       movieTitle.text = movie.movieTitle
       movieImage.image = movie.image

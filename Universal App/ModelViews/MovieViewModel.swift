@@ -32,9 +32,11 @@ class MovieViewModel {
   }
   
   
+  //  load images, take a callback to let imageView know there's new image ready to render (success:)
   func loadImage(success: @escaping (UIImage?)->()) {
+    // return if imageState is set - we are loading or have already loaded an image
     if imageState != nil { return }
-    print("Loading", movieTitle)
+    // Image is broken treat it as loaded and set image to nil
     guard let url = url else {
       imageState = .loaded
       image = nil
