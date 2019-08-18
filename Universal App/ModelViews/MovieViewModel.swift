@@ -31,12 +31,14 @@ class MovieViewModel {
     
   }
   
-  func loadImage() {
+  
+  func loadImage(success: @escaping (UIImage?)->()) {
     if imageState != nil { return }
     print("Loading", movieTitle)
     guard let url = url else {
       imageState = .loaded
       image = nil
+      success(nil)
       return
     }
     DispatchQueue.global().async {
@@ -46,6 +48,7 @@ class MovieViewModel {
           DispatchQueue.main.async {
             self.imageState = .loaded
             self.image = image
+            success(image)
           }
         }
       }
