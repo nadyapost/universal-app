@@ -43,5 +43,14 @@ class TableViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return movies.count
   }
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    performSegue(withIdentifier: "mainToDetail", sender: self)
+  }
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let vc = segue.destination as! DetailViewController
+    let indexPath = tableView.indexPathForSelectedRow
+    vc.movie = movies[indexPath!.row]
+  }
 }
 

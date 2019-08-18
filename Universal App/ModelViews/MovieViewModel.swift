@@ -13,6 +13,9 @@ class MovieViewModel {
   
   var movieTitle: String
   var image = UIImage(named: "LoadingImg")
+  var releaseDate: String
+  var rating: String
+  
   var url: URL?
   enum ImageLoadState {
     case loading
@@ -23,6 +26,8 @@ class MovieViewModel {
   init(movie: Movie) {
     self.movieTitle = movie.title
     self.url = movie.imageHref
+    self.releaseDate = movie.releaseDate
+    self.rating = movie.rating?.description ?? ""
     
   }
   
